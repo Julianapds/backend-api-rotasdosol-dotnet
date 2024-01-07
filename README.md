@@ -1,6 +1,5 @@
 # API de Viagens - Rotas do Sol
-
-![Capa](Assets/capa.jpeg)
+![api agencia](https://github.com/Julianapds/backend-api-rotasdosol-dotnet/assets/94876661/f5769074-f08c-4ccb-bbef-ea5a70dc61d6)
 
 ## Descrição
 
