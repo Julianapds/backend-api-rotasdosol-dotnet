@@ -3,8 +3,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using System.Runtime.InteropServices;
 
-
 var builder = WebApplication.CreateBuilder(args);
+
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
@@ -17,9 +17,18 @@ builder.Services.AddDbContext<Contexto>(options =>
     options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),
     ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))));
 
+
 builder.Services.AddControllers();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", builder =>
+        builder.AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader());
+});
 
 var app = builder.Build();
+
 
 if (app.Environment.IsDevelopment())
 {
@@ -30,7 +39,11 @@ if (app.Environment.IsDevelopment())
     });
 }
 
+
+app.UseCors("AllowAll");
+
 app.UseRouting();
+
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllers();

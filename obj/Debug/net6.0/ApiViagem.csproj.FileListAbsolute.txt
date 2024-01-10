@@ -283,3 +283,4 @@ C:\Users\julia\source\repos\ApiAgencia\ApiViagem\ApiViagem\obj\Debug\net6.0\refi
 C:\Users\julia\source\repos\ApiAgencia\ApiViagem\ApiViagem\obj\Debug\net6.0\ApiViagem.pdb
 C:\Users\julia\source\repos\ApiAgencia\ApiViagem\ApiViagem\obj\Debug\net6.0\ApiViagem.genruntimeconfig.cache
 C:\Users\julia\source\repos\ApiAgencia\ApiViagem\ApiViagem\obj\Debug\net6.0\ref\ApiViagem.dll
+C:\Users\julia\source\repos\ApiAgencia\ApiViagem\ApiViagem\obj\Debug\net6.0\ApiViagem.sourcelink.json

@@ -13,7 +13,7 @@ namespace ApiViagem.Controllers
     {
         private readonly Contexto _contexto;
 
-        public ClienteController(Contexto contexto)
+        public ClienteController(Contexto contexto) { 
             _contexto = contexto;
         }
 
